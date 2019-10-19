@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  help: false
+  active: false
+  crops: MyText
+  location: MyString
+  harvest_time: 2019-10-19 11:33:01
+  harvest: false
+
+two:
+  name: MyString
+  help: false
+  active: false
+  crops: MyText
+  location: MyString
+  harvest_time: 2019-10-19 11:33:01
+  harvest: false
