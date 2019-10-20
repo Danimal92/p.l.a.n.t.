@@ -1,0 +1,11 @@
+<%= form_for(@organization) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%><br>
+  <%= f.label :needs %>
+  <%= f.text_field :needs %><br>
+  <%= f.collection_select :volunteer_id, Volunteer.all, :id, :name %>
+  <%= f.collection_select :donor_id, Donor.all, :id, :name %>
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Organizations", organizations_path(Organization.all), method: :get %>

@@ -1,0 +1,7 @@
+<h1><%=@organization.name%></h1>
+
+
+<h2><%=@organization.needs%></h2>
+
+
+<%= button_to "Organizations", organizations_path(Organization.all), method: :get %>

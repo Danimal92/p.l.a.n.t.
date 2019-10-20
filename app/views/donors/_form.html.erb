@@ -1,0 +1,21 @@
+<%= form_for(@donor) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :active %>
+  <%= f.check_box :active, {}, true, false %><br>
+  <%= f.label :crops %>
+  <%= f.text_field :crops%><br>
+  <%= f.label :location %>
+  <%= f.text_field :location %><br>
+  <%= f.label :harvest_time %>
+  <%= f.text_field :harvest_time %><br>
+  <%= f.label :harvest%>
+  <%= f.check_box :harvest, {}, true, false%><br>
+  <%= f.label :help%>
+  <%= f.check_box :help, {}, true, false%><br> 
+  <%= f.collection_select :organization_id, Organization.all, :id, :name %>
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Organizations", organizations_path(Organization.all), method: :get %>
+

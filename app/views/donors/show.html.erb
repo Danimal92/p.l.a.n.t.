@@ -1,0 +1,14 @@
+<h1><%=@donor.name%></h1>
+
+
+<h2>Active : <%=@donor.active%></h2>
+<h2>Crops: <%=@donor.crops%></h2>
+<h2>Location: <%=@donor.location%></h2>
+<h2>Harvest time : <%=@donor.harvest_time%></h2>
+<h2>Harvest ready?: <%=@donor.harvest%></h2>
+
+
+
+
+
+<%= button_to "Organizations", organizations_path(Organization.all), method: :get %>

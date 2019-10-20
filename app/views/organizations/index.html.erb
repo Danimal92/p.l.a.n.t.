@@ -1,0 +1,13 @@
+<h1>People's Land and Agricultural Networking thing</h1>
+
+
+
+<h2>Organizations</h2>
+<%@organizations.each do |organization|%>
+<h3><%=link_to organization.name, organization_path(organization)%></h3>
+<%end%>
+
+<%= button_to "New Donor", new_donor_path(Donor.new), method: :get %>
+<%= button_to "New Volunteer", new_volunteer_path(Volunteer.new), method: :get %>
+<%= button_to "New Organization", new_organization_path(Organization.new), method: :get %>
+<%= button_to "Volunteers", volunteers_path(Volunteer.all), method: :get %>

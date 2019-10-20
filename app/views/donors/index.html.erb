@@ -1,0 +1,4 @@
+<h2>Donors</h2>
+<%@donors.each do |donor|%>
+<h3><%=link_to donor.name, donor_path(donor)%></h3>
+<%end%>
